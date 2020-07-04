@@ -58,7 +58,7 @@
           <version>2.4.0-b180725.0427</version>
       </dependency>
     
-#### appliaiton.properties:
+#### application.properties:
 
 ```
 spring.appliation.name=eurela-server
@@ -85,14 +85,28 @@ logging.level.com.netflix.discovery = ON
 ##### Eureka dashboard:
 
 * system status
-
 * current time -> uptime 
-
 * general Info -> total memory, enviroment, cpus
-
 * DS replicas
 
 *** instane currently registered with Eureka
+
+##### Spring Data REST makes it easy to expose microservices. 
+##### Spring Data REST builds on top of Spring Data repositories and automatically exports those as REST resources.
+
+#### So how does Spring Data Rest work?
+
+* At application startup, Spring Data Rest finds all of the spring data repositories
+
+* Then, Spring Data Rest creates an endpoint that matches the entity name
+
+* Next, Spring Data Rest appends an S to the entity name in the endpoint
+
+* Lastly, Spring Data Rest exposes CRUD (Create, Read, Update, and Delete) operations as RESTful APIs over HTTP
+
+* There is no need to create a controller or service layer!
+
+
 
 
 
