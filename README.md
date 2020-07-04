@@ -106,7 +106,15 @@ logging.level.com.netflix.discovery = ON
 
 * There is no need to create a controller or service layer!
 
+<a href="https://github.com/sandysanthosh/Microservies-MSA/blob/master/Items.md">ItemService</a>
 
+* spring data
+* JPA Item Repository
+* Spring DATA REST
+
+* For a @SpringBootApplication to be discovery-aware, all that's needed is the Spring Discovery Client (i.e., spring-cloud-starter-netflix-eureka-client dependency) in the classpath. 
+* The next step is to annotate the main Spring application class with the @EnableEurekaClient annotation.
+* @EnableEurekaClient is optional if the spring-cloud-starter-netflix-eureka-client dependency is on the classpath.
 
 
 
