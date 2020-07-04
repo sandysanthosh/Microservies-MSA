@@ -106,7 +106,10 @@ logging.level.com.netflix.discovery = ON
 
 * There is no need to create a controller or service layer!
 
-<a href="https://github.com/sandysanthosh/Microservies-MSA/blob/master/Items.md">ItemService</a>
+<a href="https://github.com/sandysanthosh/Microservies-MSA/blob/master/Items.md">Item Service</a>
+
+<a href="https://github.com/sandysanthosh/Microservies-MSA/blob/master/Eurekaclient.md">Eureka client</a>
+
 
 * spring data
 * JPA Item Repository
