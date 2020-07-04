@@ -40,3 +40,12 @@ spring.datasource.url= jdbc:h2:mem:items
 #### To Test:
 
   localhost:8080/items
+  
+#### POM.xml:
+
+      spring boot starter web
+      spring boot starter test
+      spring boot starter jpa
+      h2 database
+      spring boot starter rest
+
