@@ -1,0 +1,262 @@
+1.add dependecies
+2.bean class
+3.create controller - BO
+4.empDAO - JDBC template
+5.web.xml-dispatcher servlet
+6.spring-servlet:prefix,suffix,user,pass,url,driver.datasource,template
+
+JSP/servlt:
+
+@Autowired -search in <context:component-scan> - create a instance of service
+@Service
+@Controller
+@RequestMapping
+@ModelAttribute
+@PathVariable
+
+
+JSR 349:
+
+
+
+form tag;
+
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>  
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
+
+
+form:form:
+
+<form:form method="post" commandName="todo">
+
+<form : input type="text" name="desc" class =" form control" required="requirted">
+
+</form:form>
+
+
+TodoController:
+
+@RequestMapping( Value ="/add-todo", method = "RequestMethod.POST")
+public String addToDo(ModelMap Model, Todo todo){
+service.addTodo("in28Minutes",todo.desc(), new Date(), model.clear());
+return "redirect:/list-todos";
+}
+
+jars:
+
+spring mvc
+tomcat-jasper
+servlet-api
+jstl
+mysql-connector-java
+spring-jdbc
+
+form tag:
+
+<form: form method="post" commandName="todo">
+<form:input path="name"/>
+
+in controller:
+
+@RequestMapping( Value ="/add-todo", method="post")
+
+addToDo()
+
+Form Tag:
+
+form:form
+form:input
+form:radiobutton
+form:checkbox
+form:password
+form:select
+form:textarea
+form:hidden
+
+<form:input path="name"/>
+<td>${emp.id}</td>
+
+Spring JAXB:
+
+Jars:
+
+spring Core Jar
+spring Web Jar
+
+Employee.java:
+
+@XmlRootElements
+@XmlAttribute
+@XmlElement
+
+applicaiton context.xml:
+
+<oxm:jaxb2-marshaller id="jaxbMarshallerBean">  
+<oxm:class-to-be-bound name="com.javatpoint.Employee"/>  
+</oxm:jaxb2-marshaller>
+
+clientMain.java:
+
+ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+Marshaller marshall = (Marshaller) context.getBean(jaxbMarshallerBean);
+
+
+
+1.    Annotation
+
+2.    AOP
+
+3.    Attribute
+
+4.    BeanFactory
+
+5.    Bean Injection
+
+6.    Configuration
+
+7.    Container
+
+8.    Controller
+
+9.    Data Access
+
+10.  Dependency Injection
+
+11.  DispatcherServlet
+
+12.  HandlerMapping
+
+13.  ModelAndView
+
+14.  Spring MVC
+
+15.  Spring
+
+16.  Spring Context
+
+17.  Spring Security
+
+18.  Spring WebService
+
+19.  Test
+
+20.  Transaction
+
+21.   ViewResolver
+
+answer:
+
+### ModelView :
+
+```
+
+@GetMappint("/demo1"){
+ ModelView mv = new ModelView();
+ mv.addObject("TITLE","SPRING WEB MVC");
+ mv.addObject("USER","SPRING");
+ mv.setViewName("signup");
+return mv;
+}
+
+jsp:
+
+String title = (String)request.getAttribute("TITLE");
+
+<P> title of the user :<%= title %></P>
+
+<p> user name ${USER} </P>
+
+
+```
+
+
+https://www.edureka.co/blog/interview-questions/spring-interview-questions/
+
+https://www.journaldev.com/2668/spring-validation-example-mvc-validator
+
+
+
+
+/SpringMVC
+
+
+spring boot added security:
+
+Jars:
+
+tomcat-embed-jasper
+spring-boot-starter
+
+springbootstarter Security:
+
+three depencies:
+
+spring security config
+spring security core
+spring security web
+
+after restart the server:
+
+we would see auto-configuration
+
+https://www.springboottutorial.com/securing-rest-services-with-spring-boot-starter-security
+
+### spring-security-filter-chain
+
+mapping fiter
+
+->try to hit a postman /studetns/student1/courses
+
+* error: "authorised"
+* status: "401"
+* message: "bad requests:
+* path : "/studetns/student1/courses"
+
+->try to hit a postman /studetns/student1/courses -> unauthorised
+->same issue will happend for web app ask for password
+
+will get defaulte a password 25e07e82-720d-4109-ba8d-25177C6347e6 
+
+### by deauflt rest serivce with basic authentication:
+
+open postman -> goto Authrization 
+
+Type : Basic Auth
+
+username : user
+
+password: 25e07e82-720d-4109-ba8d-25177C6347e6 
+
+
+### configuration Custom Users and Roles:
+
+
+@Configuration
+
+public class securityConfig extends  WebSecurityConfigurationAdapter {
+
+protected void configure(AuthenticationManagerBuilder auth) Throw Exception{
+ 
+protected void configure(AuthenticationManagerBuilder auth)
+			throws Exception {
+		auth.inMemoryAuthentication().passwordEncoder(org.springframework.security.crypto.password.NoOpPasswordEncoder.getInstance()).withUser("user1").password("secret1")
+				.roles("USER").and().withUser("admin1").password("secret1")
+				.roles("USER", "ADMIN");
+	}
+
+	// Authorization : Role -> Access
+	protected void configure(HttpSecurity http) throws Exception {
+		http.httpBasic().and().authorizeRequests().antMatchers("/students/**")
+				.hasRole("USER").antMatchers("/**").hasRole("ADMIN").and()
+				.csrf().disable().headers().frameOptions().disable();
+	}
+}
+
+
+-extends websecurityconfigurationadapter
+-authenticationmanagerbuilder
+-HttpSecurity
+
+
+
+
