@@ -44,3 +44,55 @@
 #### What make a microservice different from a normal RESTful service?
 
       A microservice must register itself with a discovery service
+      
+ #### Eureka server to load:
+ 
+#### pom.xml:
+
+* spring cloud starter config
+*  spring  cloud netfli eureka server
+
+      <dependency>
+          <groupId>javax.xml.bind</groupId>
+          <artifactId>jaxb-api</artifactId>
+          <version>2.4.0-b180725.0427</version>
+      </dependency>
+    
+#### appliaiton.properties:
+
+```
+spring.appliation.name=eurela-server
+server.port=8761
+
+#dont register itself as client
+
+eureka.client.regiser-with-eureka = false
+eureka.client.fetch-registry= false
+logging.level.com.netflix.eureka=ON
+logging.level.com.netflix.discovery = ON
+```
+
+
+##### Starter:
+
+      @SpringBootApplication
+      @EnableEurekaServer
+
+##### login:
+
+      https://localhost:8761
+
+##### Eureka dashboard:
+
+* system status
+
+* current time -> uptime 
+
+* general Info -> total memory, enviroment, cpus
+
+* DS replicas
+
+*** instane currently registered with Eureka
+
+
+
