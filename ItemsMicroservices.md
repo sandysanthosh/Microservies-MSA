@@ -12,3 +12,14 @@
   Tomcat Server accessible via http://localhost:8080
   Items Microservice accessible via http://localhost:8080/items
   ```
+  
+ 
+  #### You may need this additional dependency in your POM file for the Eureka server to load:
+  
+  #### pom.xml:
+  
+     <dependency>
+       <groupId>javax.xml.bind</groupId>
+       <artifactId>jaxb-api</artifactId>
+       <version>2.4.0-b180725.0427</version>
+   </dependency>
