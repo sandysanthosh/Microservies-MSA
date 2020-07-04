@@ -1,6 +1,12 @@
 
 #### Eureka Module:
 
+   The case study is an online ordering service. There are multiple services that work together to create the system.
+
+            Item Service
+            Order Service
+            Shipping Service
+
    Eureka Registry accessible via http://localhost:8761
 
 #### Items Microservices Module
@@ -23,3 +29,4 @@
        <artifactId>jaxb-api</artifactId>
        <version>2.4.0-b180725.0427</version>
    </dependency>
+   
