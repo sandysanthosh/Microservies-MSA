@@ -108,10 +108,13 @@ logging.level.com.netflix.discovery = ON
 <a href="https://github.com/sandysanthosh/Microservies-MSA/blob/master/Items.md">Item Service</a>
 
 <a href="https://github.com/sandysanthosh/Microservies-MSA/blob/master/Eurekaclient.md">Eureka client</a>
-
+ 
+#### pom.xml:
 
 * spring data
+
 * JPA Item Repository
+
 * Spring DATA REST
 
 * For a @SpringBootApplication to be discovery-aware, all that's needed is the Spring Discovery Client (i.e., spring-cloud-starter-netflix-eureka-client dependency) in the classpath. 
