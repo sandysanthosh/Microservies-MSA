@@ -31,6 +31,7 @@
 
 * MSA provides systems that can better scale to load and demand.
 
+
 * MSA provides systems that are resilient because failures are isolated and don’t cascade through the infrastructure.
 
 #### Eureka:
