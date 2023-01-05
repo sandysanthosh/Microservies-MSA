@@ -126,12 +126,12 @@ logging.level.com.netflix.discovery = ON
 
 ```
 
-* Kafka - https://github.com/sandysanthosh/Apache-Kafka 
+* Kafka - <a href="https://github.com/sandysanthosh/Apache-Kafka"> Kafka </a>
 
-* Devops - https://github.com/sandysanthosh/Devops
+* Devops - <a href="https://github.com/sandysanthosh/Devops"> [Devops](https://github.com/sandysanthosh/Devops) </a> 
 
-* Gitlab - https://github.com/sandysanthosh/GitLab
+* Gitlab - <a href="https://github.com/sandysanthosh/GitLab"> [Devops](https://github.com/sandysanthosh/GitLab) </a> https://github.com/sandysanthosh/GitLab
 
-* Openshift - https://github.com/sandysanthosh/Openshift
+* Openshift - <a href="https://github.com/sandysanthosh/OpenShift"> [Openshift](https://github.com/sandysanthosh/Openshift) </a> 
 
 ```
