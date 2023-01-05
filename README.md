@@ -122,4 +122,16 @@ logging.level.com.netflix.discovery = ON
 * @EnableEurekaClient is optional if the spring-cloud-starter-netflix-eureka-client dependency is on the classpath.
 
 
+#### Topics:
 
+```
+
+* Kafka
+
+* Devops
+
+* Gitlab
+
+* Openshift
+
+```
