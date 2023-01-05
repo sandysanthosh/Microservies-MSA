@@ -126,11 +126,11 @@ logging.level.com.netflix.discovery = ON
 
 ```
 
-* Kafka
+* Kafka - https://github.com/sandysanthosh/Apache-Kafka 
 
-* Devops
+* Devops - https://github.com/sandysanthosh/Devops
 
-* Gitlab
+* Gitlab - https://github.com/sandysanthosh/GitLab
 
 * Openshift
 
