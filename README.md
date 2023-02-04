@@ -133,6 +133,48 @@ logging.level.com.netflix.discovery = ON
 
 * Gitlab - <a href="https://github.com/sandysanthosh/GitLab"> [Devops](https://github.com/sandysanthosh/GitLab) </a> https://github.com/sandysanthosh/GitLab
 
-* Openshift - <a href="https://github.com/sandysanthosh/OpenShift"> [Openshift](https://github.com/sandysanthosh/Openshift) </a> 
+* Openshift red- <a href="https://github.com/sandysanthosh/OpenShift"> [Openshift](https://github.com/sandysanthosh/Openshift) </a> 
 
 ```
+
+```
+
+
+Microservices Spring Boot Guide
+
+
+santhosh kumar
+Microservices spring boot checklist 
+
+Here's a checklist for developing microservices using Spring Boot:
+
+Define Service Boundaries: Determine the scope of each service and identify their responsibilities.
+
+Choose an appropriate data storage solution: Decide whether to use a relational database, NoSQL database, or a combination of both.
+
+Implement Service Discovery: Decide on a service discovery mechanism, such as Netflix Eureka or Consul.
+
+Use a Build Tool: Choose a build tool such as Maven or Gradle for building and packaging the application.
+
+Define RESTful APIs: Design and implement RESTful APIs for communication between services.
+
+Use a Configuration Management Tool: Decide on a configuration management tool, such as Spring Cloud Config, to manage configuration properties across all services.
+
+Enable Load Balancing: Implement load balancing, either by using a reverse proxy, such as Nginx, or a service discovery tool.
+
+Add Security: Implement security measures such as authentication, authorization, and encryption to secure communication between services.
+
+Use a Monitoring Tool: Choose a monitoring tool, such as Spring Boot Actuator, to monitor the health and performance of the services.
+
+Implement Resilience: Implement features such as circuit breakers, retries, and timeouts to make services more resilient.
+
+Automate Deployments: Automate the deployment of services using continuous integration and continuous deployment (CI/CD) tools.
+
+Use Logging: Implement logging to monitor and troubleshoot issues in the services.
+
+
+```
+
+
+
+
